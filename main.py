@@ -31,7 +31,7 @@ with app.app_context():
     db.create_all()
 
 # localhost:5000/pythonlogin/ - Login page, supports both GET and POST methods
-@app.route('/pythonlogin/', methods=['GET', 'POST'])
+@app.route('/', methods=['GET', 'POST'])
 def login():
     msg = ''  # Initialize message variable
     if request.method == 'POST' and 'username' in request.form and 'password' in request.form:
