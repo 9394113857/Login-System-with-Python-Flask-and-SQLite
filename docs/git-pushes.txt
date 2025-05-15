@@ -1,0 +1,14 @@
+$datetime = Get-Date -Format "yyyy-MM-dd HH:mm:ss"
+$commitMessage = @"
+Add developer notes for running Flask app with custom filename
+
+1. Documented how to run Flask when main file is 'main.py' using `--app` flag
+2. Provided instructions to set FLASK_APP environment variable for CMD, PowerShell, and Bash
+3. Included .flaskenv automation tip for persistent configuration
+4. Saved all notes into a text file for reference (flask_run_notes.txt)
+
+Committed on: $datetime
+"@
+
+git add flask_run_notes.txt
+git commit -m "$commitMessage"
