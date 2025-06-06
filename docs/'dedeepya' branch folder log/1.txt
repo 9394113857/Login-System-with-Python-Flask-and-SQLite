@@ -1,0 +1,11 @@
+git commit -m "**First Commit by Dedeepya**
+
+1. Set up a Flask application integrated with an SQLite database.
+2. Defined SQLAlchemy models for the database schema.
+3. Developed HTML templates for user interaction.
+4. Implemented routes for user registration, login, and data display.
+5. Registered blueprints and ensured database initialization.
+6. Verified application structure and tested API endpoints.
+
+**Committed on:** $(date '+%Y-%m-%d %H:%M:%S')
+"
