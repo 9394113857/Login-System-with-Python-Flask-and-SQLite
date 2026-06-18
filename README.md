@@ -1,4 +1,20 @@
+<<<<<<< HEAD
 # Simple Login System with Flask and SQLite
+=======
+<<<<<<< HEAD
+# Login-System-with-Python-Flask-and-MySQL
+Login System with Python Flask and MySQL
+
+# Explore the code and see how the project is structured: 
+
+- **Branch**: [changes](https://github.com/9394113857/Login-System-with-Python-Flask-and-MySQL/tree/changes)
+
+You can check out the branch to see the latest updates and features.
+
+[![View Project on GitHub](https://img.shields.io/badge/Branch_changes-blue?style=for-the-badge&logo=github)](https://github.com/9394113857/Login-System-with-Python-Flask-and-MySQL/tree/changes)
+=======
+# Flask Login System with MySQL
+>>>>>>> main
 
 1. This is a simple login system built using **Flask** and **SQLite**. 
 
@@ -55,6 +71,7 @@ Follow these steps to get the project up and running:
 1. Clone this repository:
    ```bash
    git clone https://github.com/yourusername/repositoryname.git
+<<<<<<< HEAD
 
 2. Navigate to the project directory:
    ```bash
@@ -92,3 +109,6 @@ Follow these steps to get the project up and running:
    http://127.0.0.1:5000/.    
 
    
+=======
+>>>>>>> changes
+>>>>>>> main
