@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
@@ -172,3 +173,36 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
+=======
+# Python
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+*.db
+*.sqlite3
+
+# Flask
+instance/
+.webassets-cache/
+
+# MySQL
+*.log
+*.sql
+*.sqlite
+
+# Virtual environment
+venv/
+env/
+
+# IDEs
+.vscode/
+.idea/
+
+# Flask secrets (optional, if you have any)
+config.py
+
+# OS
+.DS_Store
+Thumbs.db
+>>>>>>> changes

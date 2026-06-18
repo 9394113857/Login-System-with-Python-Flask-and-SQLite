@@ -1,0 +1,33 @@
+📝 Notes for Running Flask App When Your File is Named 'main.py'
+
+Flask looks for 'app.py' or 'wsgi.py' by default.
+Since your file is named 'main.py', you need to tell Flask explicitly.
+
+✅ Option 1: Use --app flag (recommended for temporary use in terminal)
+Run this in the terminal (ensure you're in the same folder as 'main.py'):
+
+    flask --app main run
+
+✅ Option 2: Set FLASK_APP environment variable (recommended for development)
+This avoids needing --app every time.
+
+👉 For Windows CMD:
+    set FLASK_APP=main
+    flask run
+
+👉 For Windows PowerShell:
+    $env:FLASK_APP = "main"
+    flask run
+
+👉 For macOS/Linux Bash:
+    export FLASK_APP=main
+    flask run
+
+🛠 Optional: Use a .flaskenv file to automate this
+Create a file named `.flaskenv` in your project directory with the following line:
+
+    FLASK_APP=main
+
+This works if you have `python-dotenv` installed (which Flask uses with the Flask CLI).
+
+📁 Make sure you're in the correct directory where 'main.py' is located before running any of the above commands.
