@@ -1,0 +1,194 @@
+# Git Merge Main into Changes Branch and Push to GitHub
+
+# File Name Suggestion:
+
+# git_merge_main_to_changes_and_push.txt
+
+# -------------------------------------------------------
+
+# STEP 1 - Verify Current Branch
+
+# Purpose:
+
+# Check which branch you are currently on.
+
+# -------------------------------------------------------
+
+git branch
+
+# -------------------------------------------------------
+
+# STEP 2 - Check Repository Status
+
+# Purpose:
+
+# See modified, staged, untracked files.
+
+# -------------------------------------------------------
+
+git status
+
+# -------------------------------------------------------
+
+# STEP 3 - Save Current Work
+
+# Purpose:
+
+# Commit local changes before merge.
+
+# Skip if working tree is already clean.
+
+# -------------------------------------------------------
+
+git add .
+git commit -m "Save current work before merge"
+
+# -------------------------------------------------------
+
+# STEP 4 - Get Latest Remote Changes
+
+# Purpose:
+
+# Download latest branches and commits.
+
+# -------------------------------------------------------
+
+git fetch --all
+
+# -------------------------------------------------------
+
+# STEP 5 - Switch to Main Branch
+
+# Purpose:
+
+# Move to local main branch.
+
+# -------------------------------------------------------
+
+git checkout main
+
+# -------------------------------------------------------
+
+# STEP 6 - Update Local Main
+
+# Purpose:
+
+# Sync local main with GitHub main.
+
+# -------------------------------------------------------
+
+git pull origin main
+
+# -------------------------------------------------------
+
+# STEP 7 - Switch Back to Changes Branch
+
+# Purpose:
+
+# Return to target branch.
+
+# -------------------------------------------------------
+
+git checkout changes
+
+# -------------------------------------------------------
+
+# STEP 8 - Merge Main into Changes
+
+# Purpose:
+
+# Bring latest main changes into changes branch.
+
+# Use allow-unrelated-histories if histories differ.
+
+# -------------------------------------------------------
+
+git merge main --allow-unrelated-histories
+
+# -------------------------------------------------------
+
+# STEP 9 - Resolve Conflicts If Any
+
+# Purpose:
+
+# Edit conflicted files manually.
+
+# Then stage resolved files.
+
+# -------------------------------------------------------
+
+git add .
+
+# -------------------------------------------------------
+
+# STEP 10 - Complete Merge Commit
+
+# Purpose:
+
+# Finalize merge after conflict resolution.
+
+# Skip if Git auto-created merge commit.
+
+# -------------------------------------------------------
+
+git commit -m "Merge main into changes"
+
+# -------------------------------------------------------
+
+# STEP 11 - Push Changes Branch
+
+# Purpose:
+
+# Upload merged branch to GitHub.
+
+# -------------------------------------------------------
+
+git push origin changes
+
+# -------------------------------------------------------
+
+# STEP 12 - Verify Branches
+
+# Purpose:
+
+# Confirm local and remote branches.
+
+# -------------------------------------------------------
+
+git branch -a
+
+# -------------------------------------------------------
+
+# STEP 13 - Verify Remote Repository
+
+# Purpose:
+
+# Confirm connected GitHub repository.
+
+# -------------------------------------------------------
+
+git remote -v
+
+# -------------------------------------------------------
+
+# STEP 14 - View Commit History
+
+# Purpose:
+
+# Verify merge commit and branch history.
+
+# -------------------------------------------------------
+
+git log --oneline --graph --all --decorate
+
+# -------------------------------------------------------
+
+# STEP 15 - Final Status Check
+
+# Purpose:
+
+# Ensure everything is committed and clean.
+
+# -------------------------------------------------------
+
+git status
